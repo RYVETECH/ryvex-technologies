@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYVEX TECHNOLOGIES | Autonomous Robotics & Defense Aerospace Systems</title>
+  <meta name="description" content="RYVEX Technologies — Founded by Raman Luthra (16-Year-Old ATL Innovator & National Techathon 3.0 Finalist at IIT Roorkee). Engineering autonomous defense rovers, multi-domain command motherships, and AI waste sorting ecosystems.">
+  <meta name="keywords" content="RYVEX Technologies, Raman Luthra, ARCR-UGV, VIGIL-X4, EcoGuardian, Thursday AI, Defense Robotics, IIT Roorkee Techathon, Autonomous Rovers, ATL Innovator">
+  <meta name="author" content="Raman Luthra | RYVEX Technologies">
+
+  <!-- Open Graph Protocol for rich social previews -->
+  <meta property="og:title" content="RYVEX Technologies — Build Beyond Limits">
+  <meta property="og:description" content="Official Portal of Raman Luthra and RYVEX Technologies: Next-Generation Defense Robotics, ARCR-UGV, VIGIL-X4 Mothership, and Swadeshi Innovation.">
+  <meta property="og:image" content="assets/brand/poster.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/brand/logo.png">
+
+  <!-- Google Fonts: Orbitron (Display), Rajdhani (HUD/Tech), Inter (Body), JetBrains Mono (Code/Telemetry) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Aerospace HUD Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Real-time Interactive Starfield Background Canvas -->
+  <canvas id="starfield-canvas"></canvas>
+
+  <!-- Cybernetic Grid Overlay -->
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Top Aerospace Navigation Bar -->
+  <header class="hud-navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-crest" id="nav-brand-crest">
+        <img src="assets/brand/logo.png" alt="RYVEX Logo" class="brand-crest-logo">
+        <div class="brand-text">
+          <span class="brand-name">RYVE<span class="accent-x">X</span></span>
+          <span class="brand-tagline">Build Beyond Limits</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="main-nav-links">
+          <li><a href="#mission-control" class="nav-link" id="link-mission-control">Mission Control</a></li>
+          <li><a href="#flagship-projects" class="nav-link" id="link-projects">Flagship Systems</a></li>
+          <li><a href="#robotics-evolution" class="nav-link" id="link-evolution">Evolution</a></li>
+          <li><a href="#achievement-vault" class="nav-link" id="link-vault">Proof of Work</a></li>
+          <li><a href="#hardware-lab" class="nav-link" id="link-lab">Dev Lab</a></li>
+          <li><a href="#founder-vision" class="nav-link" id="link-founder">Founder</a></li>
+          <li><a href="#dossiers" class="nav-link" id="link-dossiers">Dossiers</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Audio Synthesizer Toggle -->
+        <button class="sound-toggle-btn" id="sound-toggle-btn" title="Toggle Aerospace Audio Synthesizer" aria-label="Toggle Aerospace Audio Synthesizer">
+          <div class="sound-wave" id="sound-wave-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="sound-btn-text">AUDIO: OFF</span>
+        </button>
+
+        <a href="#contact-terminal" class="btn-hud-primary" id="header-contact-btn">
+          <span>INITIATE CONTACT</span>
+          <span>→</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Website Container -->
+  <main>
+
+    <!-- ==========================================================================
+         HERO SECTION: NEXT-GEN SCI-FI AESTHETICS
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="telemetry-status-badge">
+          <span class="status-dot-pulse"></span>
+          <span>SYSTEM ONLINE // DEFENSE ROBOTICS LAB // MEERUT, INDIA</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Ideas Into <span class="text-gradient-cyan">Reality.</span>
+        </h1>
+
+        <div class="hero-subtitle">
+          Next-Generation Defense Robotics &amp; Autonomous Systems
+        </div>
+
+        <p class="hero-desc">
+          From high-frequency combat recovery ground rovers to multi-domain carrier motherships and AI-driven ecological ecosystems. Built by 16-year-old innovator <strong>Raman Luthra</strong> to redefine indigenous technology.
+        </p>
+
+        <div class="hero-founder-pill">
+          <div class="pill-icon">⚡</div>
+          <div class="pill-text">
+            <strong>Raman Luthra</strong> — Founder &amp; Chief Robotics Architect<br>
+            <span>Top 100 National Finalist @ IIT Roorkee Techathon 3.0 (Defense Category) | State Gold Medalist</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#mission-control" class="btn-hud-primary" id="hero-btn-simulator">
+            <span>LAUNCH MISSION CONTROL HUD</span>
+            <span>▶</span>
+          </a>
+          <a href="#achievement-vault" class="btn-hud-secondary" id="hero-btn-proof">
+            <span>EXPLORE PROOF OF WORK (16+ AWARDS)</span>
+            <span>⎋</span>
+          </a>
+        </div>
+
+        <!-- Real-Time Telemetry Ticker -->
+        <div class="telemetry-ticker-bar">
+          <div class="ticker-item">
+            <span class="ticker-label">Active Deployments</span>
+            <span class="ticker-value highlight-cyan">03 SYSTEMS</span>
+          </div>
+          <div class="ticker-item">
+            <span class="ticker-label">National Selection</span>
+            <span class="ticker-value highlight-amber">TOP 100 / 1100</span>
+          </div>
+          <div class="ticker-item">
+            <span class="ticker-label">Telemetry Links</span>
+            <span class="ticker-value highlight-cyan">ESP-NOW + LoRa</span>
+          </div>
+          <div class="ticker-item">
+            <span class="ticker-label">State Honors</span>
+            <span class="ticker-value highlight-green">1ST PRIZE GOLD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holographic 3D Crest Visualization -->
+      <div class="hero-visual">
+        <div class="hologram-rig" id="hologram-rig">
+          <div class="holo-orbit-ring ring-outer"></div>
+          <div class="holo-orbit-ring ring-mid"></div>
+          <div class="holo-orbit-ring ring-inner"></div>
+
+          <img src="assets/brand/logo.png" alt="RYVEX Holographic Logo" class="hologram-core-img" id="hologram-logo">
+
+          <!-- Dynamic Telemetry Tags -->
+          <div class="hero-telemetry-tag tag-top-right">
+            <span>FIRMWARE: DUAL-CORE ESP32</span>
+          </div>
+          <div class="hero-telemetry-tag tag-bottom-left">
+            <span>VISION: EDGE AI YOLOv8</span>
+          </div>
+          <div class="hero-telemetry-tag tag-mid-left">
+            <span>PAYLOAD: 15.0 KG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MISSION CONTROL CONSOLE (INTERACTIVE ROBOTICS HUD SIMULATOR)
+         ========================================================================== -->
+    <section class="mission-control-section" id="mission-control">
+      <div class="section-header">
+        <span class="section-tag">INTERACTIVE HARDWARE TELEMETRY</span>
+        <h2 class="section-title">RYVEX Mission Control Console</h2>
+        <p class="section-subtitle">Real-time simulation engine demonstrating autonomous algorithms, dual-microcontroller telemetry, and edge intelligence.</p>
+      </div>
+
+      <div class="console-container">
+        <!-- Console Top Header Bar -->
+        <div class="console-header-bar">
+          <div class="console-title-wrap">
+            <span class="console-icon">⌘</span>
+            <span class="console-title">TACTICAL OPERATIONS MATRIX</span>
+            <span class="badge-tag tag-defense" id="system-time-display">UTC 00:00:00</span>
+          </div>
+
+          <!-- Console Navigation Tabs -->
+          <div class="console-tabs" role="tablist">
+            <button class="console-tab-btn active" data-tab="tab-arcr" id="tab-btn-arcr" role="tab" aria-selected="true">
+              <span>🎯</span> ARCR-UGV Radar
+            </button>
+            <button class="console-tab-btn" data-tab="tab-vigil" id="tab-btn-vigil" role="tab" aria-selected="false">
+              <span>🛸</span> VIGIL-X4 Command
+            </button>
+            <button class="console-tab-btn" data-tab="tab-eco" id="tab-btn-eco" role="tab" aria-selected="false">
+              <span>♻️</span> EcoGuardian Sorter
+            </button>
+            <button class="console-tab-btn" data-tab="tab-thursday" id="tab-btn-thursday" role="tab" aria-selected="false">
+              <span>🤖</span> "Thursday" AI Core
+            </button>
+          </div>
+        </div>
+
+        <div class="console-body">
+          <!-- ==========================================
+               TAB 1: ARCR-UGV AUTONOMOUS RADAR SIMULATOR
+               ========================================== -->
+          <div class="console-panel active" id="tab-arcr" role="tabpanel">
+            <div class="sim-grid-layout">
+              <!-- Radar Screen Viewport -->
+              <div class="radar-screen-wrap">
+                <div class="radar-top-hud">
+                  <span>TARGET GRID: MIL-STD-810H // SECTOR 04</span>
+                  <span id="radar-sweep-status">SWEEP: ACTIVE [360°]</span>
+                  <span id="radar-contacts-count">CONTACTS: 0</span>
+                </div>
+
+                <canvas id="arcr-radar-canvas" width="600" height="380"></canvas>
+
+                <div class="radar-controls-bar">
+                  <button class="sim-btn btn-scan" id="btn-trigger-sweep">
+                    <span>📡</span> Run Radar Scan
+                  </button>
+                  <button class="sim-btn btn-hazard" id="btn-trigger-hazard">
+                    <span>⚠️</span> Inject UXO Hazard
+                  </button>
+                  <button class="sim-btn btn-scan" id="btn-collect-brass">
+                    <span>⚙️</span> Collect Detected Brass
+                  </button>
+                  <button class="sim-btn btn-reset-sim" id="btn-reset-radar">
+                    <span>↺</span> Clear Grid
+                  </button>
+                </div>
+              </div>
+
+              <!-- Radar Telemetry Deck -->
+              <div class="sim-telemetry-deck">
+                <!-- Emergency Hazard Alert Banner (hidden until triggered) -->
+                <div class="hazard-alert-banner" id="hazard-alert-banner">
+                  <div class="alert-icon">⚠️</div>
+                  <div class="alert-text-wrap">
+                    <h4>CRITICAL HAZARD: UNEXPLODED ORDNANCE (UXO) DETECTED</h4>
+                    <p>Sub-surface coil triggered anomaly #UXO-902. Autonomous emergency brake engaged. Sieve drum halted. Operator notified over encrypted telemetry link.</p>
+                  </div>
+                </div>
+
+                <div class="telemetry-metrics-grid">
+                  <div class="metric-card">
+                    <div class="metric-header">
+                      <span class="metric-label">Cartridges Cleared</span>
+                      <span class="metric-icon">🎯</span>
+                    </div>
+                    <div class="metric-big-num" id="metric-brass-cleared">142 <span class="metric-unit">PCS</span></div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-header">
+                      <span class="metric-label">Trommel Drum Velocity</span>
+                      <span class="metric-icon">⚡</span>
+                    </div>
+                    <div class="metric-big-num" id="metric-trommel-rpm">48 <span class="metric-unit">RPM</span></div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-header">
+                      <span class="metric-label">Sub-surface Coil Inductance</span>
+                      <span class="metric-icon">🧲</span>
+                    </div>
+                    <div class="metric-big-num" id="metric-metal-signal">84.2 <span class="metric-unit">μH</span></div>
+                  </div>
+
+                  <div class="metric-card">
+                    <div class="metric-header">
+                      <span class="metric-label">Edge AI Classification</span>
+                      <span class="metric-icon">🧠</span>
+                    </div>
+                    <div class="metric-big-num" id="metric-ai-latency">14.6 <span class="metric-unit">MS</span></div>
+                  </div>
+                </div>
+
+                <!-- Trommel Sieve Bins Breakdown -->
+                <div class="trommel-bins-wrap">
+                  <div class="trommel-title">
+                    <span>Multi-Caliber Sieve Sorting Hopper</span>
+                    <span class="badge-tag tag-defense">ROTARY SPIRAL PASS</span>
+                  </div>
+                  <div class="bins-row">
+                    <div class="bin-col">
+                      <div class="bin-caliber">9mm NATO</div>
+                      <div class="bin-count" id="bin-count-9mm">78</div>
+                    </div>
+                    <div class="bin-col">
+                      <div class="bin-caliber">5.56x45mm</div>
+                      <div class="bin-count" id="bin-count-556">43</div>
+                    </div>
+                    <div class="bin-col">
+                      <div class="bin-caliber">7.62x51mm</div>
+                      <div class="bin-count" id="bin-count-762">21</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               TAB 2: VIGIL-X4 MULTI-DOMAIN COMMAND CONSOLE
+               ========================================== -->
+          <div class="console-panel" id="tab-vigil" role="tabpanel">
+            <div class="vigil-sim-grid">
+              <!-- Visual Stage -->
+              <div class="vigil-viewport-card">
+                <div class="radar-top-hud">
+                  <span>MOTHERSHIP FLIGHT DECK // ESP-NOW MESH ACTIVE</span>
+                  <span id="vigil-comm-status" style="color: var(--emerald);">STATUS: COMBAT READY</span>
+                </div>
+
+                <div class="vigil-visual-stage">
+                  <img src="assets/projects/vigil_x4.jpg" alt="VIGIL-X4 Rover" class="vigil-stage-img" id="vigil-stage-img">
+
+                  <!-- Animated Drone Element on Deck -->
+                  <div class="drone-flight-overlay" id="drone-overlay">
+                    <div class="drone-icon">🚁</div>
+                    <div class="drone-hud-tag" id="drone-hud-tag">AERIAL QUAD: DOCKED</div>
+                  </div>
+
+                  <!-- Animated Scout Car Element at Tailgate -->
+                  <div class="scout-car-overlay" id="scout-car-overlay">
+                    <div class="scout-car-icon">🏎️</div>
+                    <div class="drone-hud-tag" id="scout-hud-tag">SCOUT CAR: DEPLOYED</div>
+                  </div>
+                </div>
+
+                <!-- 5-DOF Kinematics Arm Control Sliders -->
+                <div class="arm-control-box">
+                  <div class="arm-control-title">
+                    <span>5-DOF Precision Robotic Arm Kinematics</span>
+                    <span class="badge-tag tag-defense" id="arm-sync-badge">SERVO BUS: SYNCED</span>
+                  </div>
+
+                  <div class="arm-slider-row">
+                    <span class="arm-slider-label">BASE YAW (0°-180°)</span>
+                    <input type="range" min="0" max="180" value="90" class="arm-slider" id="arm-slider-yaw">
+                    <span class="arm-slider-val" id="val-arm-yaw">90°</span>
+                  </div>
+
+                  <div class="arm-slider-row">
+                    <span class="arm-slider-label">SHOULDER PITCH</span>
+                    <input type="range" min="15" max="165" value="45" class="arm-slider" id="arm-slider-shoulder">
+                    <span class="arm-slider-val" id="val-arm-shoulder">45°</span>
+                  </div>
+
+                  <div class="arm-slider-row">
+                    <span class="arm-slider-label">ELBOW ELEVATION</span>
+                    <input type="range" min="0" max="180" value="110" class="arm-slider" id="arm-slider-elbow">
+                    <span class="arm-slider-val" id="val-arm-elbow">110°</span>
+                  </div>
+
+                  <div class="arm-slider-row">
+                    <span class="arm-slider-label">GRIPPER APERTURE</span>
+                    <input type="range" min="0" max="100" value="70" class="arm-slider" id="arm-slider-gripper">
+                    <span class="arm-slider-val" id="val-arm-gripper">70%</span>
+                  </div>
+
+                  <div class="vigil-action-btns">
+                    <button class="sim-btn btn-scan" id="btn-deploy-drone">
+                      <span>🚀</span> Deploy Recon Drone
+                    </button>
+                    <button class="sim-btn btn-scan" id="btn-deploy-scout">
+                      <span>🚪</span> Open Tailgate &amp; Scout Car
+                    </button>
+                    <button class="sim-btn btn-reset-sim" id="btn-recall-all">
+                      <span>⚓</span> Recall &amp; Lock Deck
+                    </button>
+                    <button class="sim-btn btn-hazard" id="btn-flir-toggle">
+                      <span>👁️</span> Toggle FLIR Thermal
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Environmental Sensor Suite Stream -->
+              <div class="sensor-stream-panel">
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">💨</span>
+                    <div>
+                      <div class="sensor-title">MQ-135 Hazardous Gas &amp; Smoke</div>
+                      <div class="sensor-meta">Dual Core ESP32 Slave Node // I2C Bus</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" id="sensor-gas-ppm">312 <span style="font-size: 0.75rem;">PPM</span></div>
+                </div>
+
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">🌡️</span>
+                    <div>
+                      <div class="sensor-title">Thermal Ambient Core (DHT11)</div>
+                      <div class="sensor-meta">External Chassis Thermistor</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" id="sensor-temp-reading">28.4 <span style="font-size: 0.75rem;">°C</span></div>
+                </div>
+
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">🛰️</span>
+                    <div>
+                      <div class="sensor-title">LoRa 433MHz Telemetry Link</div>
+                      <div class="sensor-meta">Line-of-Sight Long Range Sub-GHz</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" id="sensor-lora-rssi">-68 <span style="font-size: 0.75rem;">dBm</span></div>
+                </div>
+
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">📡</span>
+                    <div>
+                      <div class="sensor-title">ESP-NOW Intra-Rover Mesh</div>
+                      <div class="sensor-meta">Master (Drive) ⟷ Slave (Garage/Arm)</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" id="sensor-espnow-latency">2.1 <span style="font-size: 0.75rem;">ms</span></div>
+                </div>
+
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">🔋</span>
+                    <div>
+                      <div class="sensor-title">LiPo Main Drive Bus (Dual 43A BTS7960)</div>
+                      <div class="sensor-meta">11.1V 3S 5200mAh High-Discharge</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" id="sensor-battery-voltage">11.9 <span style="font-size: 0.75rem;">V</span></div>
+                </div>
+
+                <div class="sensor-gauge-item">
+                  <div class="sensor-info">
+                    <span class="sensor-icon">📷</span>
+                    <div>
+                      <div class="sensor-title">Tapo IP 360° Real-time Stream</div>
+                      <div class="sensor-meta">1080p Optical Feed + Night Vision</div>
+                    </div>
+                  </div>
+                  <div class="sensor-reading" style="color: var(--emerald);">30 <span style="font-size: 0.75rem;">FPS</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               TAB 3: ECOGUARDIAN WASTE SORTER SIMULATOR
+               ========================================== -->
+          <div class="console-panel" id="tab-eco" role="tabpanel">
+            <div class="ecoguardian-sim-grid">
+              <!-- Sorting Chamber Interactive Wrap -->
+              <div class="sorting-chamber-wrap">
+                <div class="chamber-heading">Intelligent 4-Category Segregation Chamber</div>
+
+                <!-- Feed Chute -->
+                <div class="feed-chute-interactive" id="eco-chute">
+                  <div class="chute-icon" id="eco-chute-icon">📥</div>
+                  <div class="chute-text" id="eco-chute-status">FEED CHUTE READY // INSERT OBJECT</div>
+                </div>
+
+                <!-- Waste Feed Buttons -->
+                <div class="waste-feed-buttons">
+                  <button class="btn-feed-item" data-type="metal" id="feed-btn-can">
+                    <span>🥫</span> Aluminum Can
+                  </button>
+                  <button class="btn-feed-item" data-type="plastic" id="feed-btn-bottle">
+                    <span>🧴</span> Plastic Bottle
+                  </button>
+                  <button class="btn-feed-item" data-type="wet" id="feed-btn-organic">
+                    <span>🍎</span> Organic Core
+                  </button>
+                  <button class="btn-feed-item" data-type="dry" id="feed-btn-paper">
+                    <span>📄</span> Dry Cardboard
+                  </button>
+                </div>
+
+                <!-- Rotary Servo Diverter Needle Visual -->
+                <div class="servo-diverter-stage">
+                  <div class="diverter-needle" id="eco-diverter-needle"></div>
+                  <div class="diverter-pivot"></div>
+                </div>
+
+                <!-- AI Classification Result -->
+                <div class="ai-scan-result-card">
+                  <div>
+                    <span style="color: var(--text-muted);">DIAGNOSTIC: </span>
+                    <span id="eco-scan-detected" style="color: #ffffff; font-weight: 700;">STANDBY</span>
+                  </div>
+                  <div>
+                    <span style="color: var(--text-muted);">CONFIDENCE: </span>
+                    <span class="ai-scan-confidence" id="eco-scan-confidence">-- %</span>
+                  </div>
+                  <div>
+                    <span style="color: var(--text-muted);">ROTOR TARGET: </span>
+                    <span id="eco-rotor-angle" style="color: var(--cyan); font-weight: 700;">0°</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4-Level Bins & Ultrasonic Fill Gauges -->
+              <div class="waste-bins-deck">
+                <div class="waste-bin-card metal">
+                  <div class="bin-header">
+                    <span class="bin-name">Metal Bin</span>
+                    <span class="bin-level-percent" id="metal-fill-pct">35%</span>
+                  </div>
+                  <div class="bin-fill-bar-track">
+                    <div class="bin-fill-bar" id="metal-fill-bar" style="width: 35%; background: #60a5fa;"></div>
+                  </div>
+                  <div class="bin-item-count" id="metal-count-txt">Inductive Sensor Triggered: 7 items</div>
+                </div>
+
+                <div class="waste-bin-card plastic">
+                  <div class="bin-header">
+                    <span class="bin-name">Plastic Bin</span>
+                    <span class="bin-level-percent" id="plastic-fill-pct">52%</span>
+                  </div>
+                  <div class="bin-fill-bar-track">
+                    <div class="bin-fill-bar" id="plastic-fill-bar" style="width: 52%; background: #38bdf8;"></div>
+                  </div>
+                  <div class="bin-item-count" id="plastic-count-txt">Capacitive Sensor Triggered: 13 items</div>
+                </div>
+
+                <div class="waste-bin-card wet">
+                  <div class="bin-header">
+                    <span class="bin-name">Wet / Bio Waste</span>
+                    <span class="bin-level-percent" id="wet-fill-pct">68%</span>
+                  </div>
+                  <div class="bin-fill-bar-track">
+                    <div class="bin-fill-bar" id="wet-fill-bar" style="width: 68%; background: #4ade80;"></div>
+                  </div>
+                  <div class="bin-item-count" id="wet-count-txt">Moisture Probe Triggered: 24 items</div>
+                </div>
+
+                <div class="waste-bin-card dry">
+                  <div class="bin-header">
+                    <span class="bin-name">Dry General</span>
+                    <span class="bin-level-percent" id="dry-fill-pct">40%</span>
+                  </div>
+                  <div class="bin-fill-bar-track">
+                    <div class="bin-fill-bar" id="dry-fill-bar" style="width: 40%; background: #fbbf24;"></div>
+                  </div>
+                  <div class="bin-item-count" id="dry-count-txt">Ultrasonic Clearance: 10 items</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==========================================
+               TAB 4: THURSDAY AI VIRTUAL TERMINAL
+               ========================================== -->
+          <div class="console-panel" id="tab-thursday" role="tabpanel">
+            <div class="terminal-chat-wrap">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot dot-red"></span>
+                  <span class="terminal-dot dot-yellow"></span>
+                  <span class="terminal-dot dot-green"></span>
+                </div>
+                <div class="terminal-prompt-title">RYVEX-OS // "THURSDAY" INTELLIGENCE SUITE v3.4</div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--emerald);">● LOCAL HOST ONLINE</div>
+              </div>
+
+              <!-- Message Stream -->
+              <div class="terminal-messages-stream" id="terminal-messages-stream">
+                <div class="ai-message-row">
+                  <div class="ai-avatar">TH</div>
+                  <div class="ai-msg-bubble">
+                    Greetings, Commander. I am <strong>Thursday</strong>, the proprietary AI assistant developed by Raman Luthra for RYVEX Technologies. I manage telemetry routing, mission diagnostics, and technical queries across all three generations of our robotics portfolio.<br><br>
+                    How may I assist your analysis today? Select a query below or type your transmission.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Command Chips -->
+              <div class="terminal-chips-row">
+                <button class="quick-chip-btn" data-query="Who is Raman Luthra?">Who is Raman Luthra?</button>
+                <button class="quick-chip-btn" data-query="Explain VIGIL-X4 dual-ESP32 architecture">VIGIL-X4 Architecture</button>
+                <button class="quick-chip-btn" data-query="How does ARCR-UGV sort spent ammo?">ARCR-UGV Sorting Trommel</button>
+                <button class="quick-chip-btn" data-query="What was Raman's achievement at IIT Roorkee?">IIT Roorkee Selection</button>
+                <button class="quick-chip-btn" data-query="What are the Gen 1 to Gen 3 upgrades?">Generations 1-3 Evolution</button>
+              </div>
+
+              <!-- Input Bar -->
+              <form class="terminal-input-bar" id="terminal-chat-form">
+                <input type="text" class="terminal-input-field" id="terminal-input" placeholder="Enter query or type 'help' for available system commands..." autocomplete="off">
+                <button type="submit" class="terminal-send-btn" id="terminal-submit-btn">TRANSMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FLAGSHIP PROJECTS SHOWCASE SECTION
+         ========================================================================== -->
+    <section id="flagship-projects">
+      <div class="section-header">
+        <span class="section-tag">HARDWARE SPECIFICATIONS &amp; BLUEPRINTS</span>
+        <h2 class="section-title">Flagship Robotics Systems</h2>
+        <p class="section-subtitle">Battle-tested and peer-reviewed autonomous solutions built for defense logistics and ecological sustainability.</p>
+      </div>
+
+      <div class="projects-showcase-grid">
+
+        <!-- PROJECT 1: ARCR-UGV -->
+        <article class="project-feature-card" id="project-arcr">
+          <div class="project-visual-wrapper">
+            <img src="assets/projects/arcr_ugv.png" alt="ARCR-UGV Autonomous Cartridge Retriever" class="project-img-main">
+            <div class="project-award-tag">★ INSPIRE-MANAK NOMINATED INNOVATION</div>
+          </div>
+
+          <div class="project-info-column">
+            <div class="project-badge-bar">
+              <span class="badge-tag tag-defense">AUTONOMOUS DEFENSE ROBOTICS</span>
+              <span class="badge-tag">SWADESHI HARDWARE</span>
+            </div>
+
+            <h3 class="project-name">ARCR-UGV</h3>
+            <div class="project-tagline">Autonomous Range Cartridge Retriever — Tracked UGV</div>
+
+            <p class="project-description">
+              Designed to solve critical military and shooting range bottlenecks. After firing drills, thousands of high-value brass casings (9mm, 5.56mm, 7.62mm) litter hot grounds, presenting both extreme manual labor costs and dangerous hazards from unexploded rounds. ARCR-UGV traverses rugged terrains, scoops spent cartridges, separates debris through a calibrated mechanical rotary trommel, and uses edge AI to safely flag live ammunition and UXO hazards before chambering.
+            </p>
+
+            <div class="project-specs-list">
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Mobility:</strong> High-torque tracked tank chassis with heavy mud treads</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Sorting Drum:</strong> 3-stage calibrated rotary spiral trommel sieve</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Sensor Coil:</strong> Sub-surface pulsed induction metal detector</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Hazard AI:</strong> Edge vision classifier distinguishing spent brass from live UXO</span>
+              </div>
+            </div>
+
+            <div class="project-action-row">
+              <a href="assets/docs/ARCR_UGV_Summary.pdf" target="_blank" class="btn-hud-primary">
+                <span>DOWNLOAD ENGINEERING DOSSIER</span>
+                <span>⬇</span>
+              </a>
+              <button class="btn-hud-secondary switch-to-tab" data-target="tab-arcr">
+                <span>SIMULATE ON RADAR</span>
+                <span>▶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: VIGIL-X4 MOTHERSHIP -->
+        <article class="project-feature-card reverse-layout" id="project-vigil">
+          <div class="project-info-column">
+            <div class="project-badge-bar">
+              <span class="badge-tag tag-defense">MULTI-DOMAIN COMBAT SYSTEM</span>
+              <span class="badge-tag tag-national">IIT ROORKEE TECHATHON 3.0 FINALIST</span>
+            </div>
+
+            <h3 class="project-name">VIGIL-X4</h3>
+            <div class="project-tagline">Multi-Domain Tactical Command Carrier Mothership</div>
+
+            <p class="project-description">
+              The flagship innovation selected among the Top 100 out of 1,100 national teams at <strong>IIT Roorkee National Techathon 3.0</strong>. VIGIL-X4 is an all-terrain tactical mothership built on an asynchronous dual-microcontroller architecture. The Master ESP32 governs heavy-duty tank locomotion via dual 43A BTS7960 H-bridges, long-range LoRa 433MHz telemetry, and FlySky 2.4GHz control. The Slave ESP32 coordinates the rear motorized tailgate garage, launching a micro-recon scout car, flying an overhead surveillance quadcopter from its roof pad, and operating a 5-DOF high-torque robotic manipulator arm.
+            </p>
+
+            <div class="project-specs-list">
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Architecture:</strong> Master-Slave Dual ESP32 with zero-packet-drop ESP-NOW</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Aerial Sub-Unit:</strong> Top-deck motorized quadcopter launch and recovery station</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Ground Sub-Unit:</strong> Internal rear garage deploying autonomous scout mini-rover</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Kinematics:</strong> 5-DOF robotic arm with high-torque metal gear servos</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Telemetry &amp; Video:</strong> Tapo IP 360° pan-tilt camera + ESP32-CAM + LoRa 433MHz</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Atmospheric Suite:</strong> Real-time MQ-135 hazardous gas and DHT11 thermal sensors</span>
+              </div>
+            </div>
+
+            <div class="project-action-row">
+              <a href="assets/docs/VIGIL_X4_Project_Overview.pdf" target="_blank" class="btn-hud-primary">
+                <span>DOWNLOAD PROJECT OVERVIEW</span>
+                <span>⬇</span>
+              </a>
+              <button class="btn-hud-secondary switch-to-tab" data-target="tab-vigil">
+                <span>LAUNCH COMMAND CONSOLE</span>
+                <span>▶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="project-visual-wrapper">
+            <img src="assets/projects/vigil_x4.jpg" alt="VIGIL-X4 Multi-Domain Command Mothership" class="project-img-main">
+            <div class="project-award-tag" style="border-color: var(--crimson); color: var(--crimson); box-shadow: 0 0 15px rgba(255, 51, 102, 0.4);">
+              ★ DEFENSE INNOVATION CATEGORY FINALIST
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: ECOGUARDIAN ECOSYSTEM -->
+        <article class="project-feature-card" id="project-ecoguardian">
+          <div class="project-visual-wrapper">
+            <img src="assets/projects/ecoguardian_showcase.png" alt="EcoGuardian Smart Waste Sorter" class="project-img-main">
+            <div class="project-award-tag" style="border-color: var(--emerald); color: var(--emerald); box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);">
+              ★ STATE 1ST POSITION — SWADESHI INNOVATION
+            </div>
+          </div>
+
+          <div class="project-info-column">
+            <div class="project-badge-bar">
+              <span class="badge-tag tag-environmental">ECOLOGICAL INTELLIGENCE</span>
+              <span class="badge-tag">NITI AAYOG / ACIC ACCLAIMED</span>
+            </div>
+
+            <h3 class="project-name">EcoGuardian</h3>
+            <div class="project-tagline">Autonomous 4-Way Intelligent Segregation Ecosystem</div>
+
+            <p class="project-description">
+              Awarded First Position at the State Science Fair (Prantiya Vigyan Mela 2026) and recognized by NITI Aayog's Atal Community Innovation Centre (ACIC MIET). EcoGuardian tackles the global crisis of unsorted waste at the point of disposal. Utilizing a multi-sensor fusion pipeline (inductive proximity, capacitive permittivity, and soil moisture probes), the unit autonomously classifies waste into Metal, Plastic, Wet, and Dry fractions, indexing a precision rotary tray diverter while reporting fill levels to the "Thursday" AI core.
+            </p>
+
+            <div class="project-specs-list">
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Segregation:</strong> 4 distinct compartments (Metallic, Plastic, Wet Bio, Dry Fibrous)</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Sorting Mechanism:</strong> NEMA stepper-driven multi-angle rotary index table</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>Sensor Fusion:</strong> Inductive + Capacitive + Soil Resistivity + Ultrasonic</span>
+              </div>
+              <div class="spec-bullet">
+                <span class="spec-bullet-icon">▸</span>
+                <span><strong>AI Companion:</strong> "Thursday" virtual assistant running voice telemetry</span>
+              </div>
+            </div>
+
+            <div class="project-action-row">
+              <a href="assets/docs/EcoGuardian_Ecosystem_Summary.pdf" target="_blank" class="btn-hud-primary">
+                <span>DOWNLOAD ECOSYSTEM DOSSIER</span>
+                <span>⬇</span>
+              </a>
+              <button class="btn-hud-secondary switch-to-tab" data-target="tab-eco">
+                <span>SIMULATE SORTING CHAMBER</span>
+                <span>▶</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ROBOTICS EVOLUTION TRIPTYCH (GEN 1 -> GEN 2 -> GEN 3)
+         ========================================================================== -->
+    <section class="evolution-section" id="robotics-evolution">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERING ITERATION TRAJECTORY</span>
+        <h2 class="section-title">The Robotics Evolution Triptych</h2>
+        <p class="section-subtitle">Real engineering is forged through continuous iteration. Observe how Raman Luthra evolved early breadboard prototypes into high-precision autonomous rovers.</p>
+      </div>
+
+      <div class="triptych-master-card">
+        <div class="triptych-img-wrap">
+          <img src="assets/projects/ecoguardian_triptych.png" alt="Evolution of EcoGuardian and Robotics from Generation 1 to Generation 3" class="triptych-img">
+        </div>
+
+        <div class="evolution-stages-grid">
+          <!-- Generation 1 -->
+          <div class="evolution-stage-col">
+            <div class="stage-badge-top">
+              <span>01</span> Generation 1
+            </div>
+            <h4 class="stage-col-title">The Proof-of-Concept Flap</h4>
+            <p class="stage-col-desc">
+              Constructed on a custom cardboard and acrylic bench frame. Validated fundamental wet vs dry classification using an Arduino Uno, basic moisture probes, and a single micro-servo dual-direction flap diverter.
+            </p>
+            <ul class="stage-features-list">
+              <li>Dual-category binary diversion (Wet / Dry)</li>
+              <li>Arduino Uno core running C++ finite state loop</li>
+              <li>Hand-wired perfboard and external 9V rail</li>
+              <li>Proof of fundamental sensor feasibility</li>
+            </ul>
+          </div>
+
+          <!-- Generation 2 -->
+          <div class="evolution-stage-col" style="border-color: rgba(0, 240, 255, 0.4);">
+            <div class="stage-badge-top" style="color: var(--cyan);">
+              <span>02</span> Generation 2
+            </div>
+            <h4 class="stage-col-title">The Rotary Chamber Sorter</h4>
+            <p class="stage-col-desc">
+              Expanded to an industrial 4-compartment segregation unit. Integrated inductive metal detection, capacitive dielectric sensing, and a precision rotating circular tray indexing four separate collection bins.
+            </p>
+            <ul class="stage-features-list">
+              <li>4-category sorting (Metal, Plastic, Wet, Dry)</li>
+              <li>Stepper motor with optical limit home switch</li>
+              <li>Ultrasonic sensors tracking real-time bin capacity</li>
+              <li>Awarded State 1st Position at Science Fair</li>
+            </ul>
+          </div>
+
+          <!-- Generation 3 -->
+          <div class="evolution-stage-col" style="border-color: var(--amber);">
+            <div class="stage-badge-top" style="color: var(--amber);">
+              <span>03</span> Generation 3
+            </div>
+            <h4 class="stage-col-title">The Autonomous Rover &amp; AI</h4>
+            <p class="stage-col-desc">
+              Transformed into an autonomous mobile field unit. Mounted onto a rugged tracked chassis with dual-ESP32 ESP-NOW networking, integrated "Thursday" AI core, cloud telemetry, and long-range remote dispatch.
+            </p>
+            <ul class="stage-features-list">
+              <li>Tracked all-terrain mobile rover chassis</li>
+              <li>Dual ESP32 mesh with LoRa sub-GHz telemetry</li>
+              <li>Thursday AI assistant with voice diagnostic output</li>
+              <li>Selected for IIT Roorkee Techathon 3.0 Finals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENT CORNER & PROOF-OF-WORK VAULT
+         ========================================================================== -->
+    <section id="achievement-vault">
+      <div class="section-header">
+        <span class="section-tag">VERIFIED CREDENTIALS &amp; RECOGNITION</span>
+        <h2 class="section-title">Proof of Work &amp; Achievement Vault</h2>
+        <p class="section-subtitle">Real trophies, state champion certificates, government honors, and national press coverage earned by Raman Luthra.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="achievement-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Proof (16)</button>
+        <button class="filter-btn" data-filter="certificate">Official Certificates (5)</button>
+        <button class="filter-btn" data-filter="trophy">Trophy Vault (3)</button>
+        <button class="filter-btn" data-filter="press">Press &amp; Media (4)</button>
+        <button class="filter-btn" data-filter="field">Stage &amp; Lab Evidence (4)</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="achievement-gallery-grid" id="achievement-grid">
+
+        <!-- 1. Press: Janvani IIT Roorkee Techathon Selection -->
+        <div class="achievement-item-card" data-category="press" data-img="assets/achievements/IMG_20261026_201917.jpg" data-title="Janvani Daily: Selection for IIT Roorkee Techathon 3.0 (Defense Category)" data-desc="Published in Janvani Daily: 'बालेराम स्कूल के तीन प्रोजेक्ट्स विद्या भारती के टेकाथॉन के लिए चयनित'. Raman Luthra (Class 10) selected among the National Top 100 out of 1,100 projects across 74 schools in India for the VIGIL-X4 defense innovation system evaluated by IIT Roorkee scientists.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_201917.jpg" alt="Janvani Daily Newspaper Feature — IIT Roorkee Techathon Selection" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-national">IIT ROORKEE SELECTION (जनवाणी)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">JANVANI DAILY PRINT FEATURE</div>
+            <h4 class="achievement-card-title">National Selection: IIT Roorkee Techathon 3.0</h4>
+            <p class="achievement-card-desc">Full newspaper feature: Selected in Defense Innovation category among the National Top 100 out of 1,100 nationwide applicants evaluated by IIT Roorkee scientists.</p>
+            <div class="achievement-card-foot"><span>CLICK TO READ ARTICLE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 2. Press: Heera Times Summer Camp Robotic Arm -->
+        <div class="achievement-item-card" data-category="press" data-img="assets/achievements/IMG_20261026_201958.jpg" data-title="Heera Times: Multi-Functional Robotic Arm Feature at ATL Camp" data-desc="Heera Times Bureau feature: 'दस दिवसीय समर वेकेशन कैंप में दिखाई तकनीकी कौशलता'. Highlighting Raman Luthra's custom 3-axis RF-controlled robotic arm developed at BBSSM Atal Tinkering Lab, commended by school principal Prabhat Kumar Gupta under the Aatmanirbhar Bharat vision.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_201958.jpg" alt="Heera Times Newspaper Article — Robotic Arm at ATL Camp" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-press">HEERA TIMES FEATURE</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">HEERA TIMES PRINT REPORT</div>
+            <h4 class="achievement-card-title">Heera Times: ATL 3-Axis Robotic Arm Spotlight</h4>
+            <p class="achievement-card-desc">Front-page press article detailing Raman Luthra's multi-functional wireless robotic arm presentation and live demonstration at the Atal Tinkering Lab summer camp.</p>
+            <div class="achievement-card-foot"><span>CLICK TO READ ARTICLE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 3. Press: Regional Daily Innovation Spotlight -->
+        <div class="achievement-item-card" data-category="press" data-img="assets/achievements/IMG_20261026_202010.jpg" data-title="Regional Daily: Innovation Spotlight on Raman Luthra" data-desc="Daily newspaper report: 'छात्रों का नवाचार चमका, अभय और रमन के मॉडल बने आकर्षण का केंद्र - रोबोटिक आर्म ने किया प्रभावित'. Raman Luthra demonstrated precision wireless arm writing the school's name live with RF remote control.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202010.jpg" alt="Daily Newspaper Headline — Students Innovation Spotlight" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-press">PRESS SPOTLIGHT</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">REGIONAL DAILY HEADLINE</div>
+            <h4 class="achievement-card-title">Regional Press: Robotic Arm Center of Attraction</h4>
+            <p class="achievement-card-desc">Prominent daily news coverage of Raman operating his custom 3-axis robotic arm with live wireless writing demonstration before school leadership and media.</p>
+            <div class="achievement-card-foot"><span>CLICK TO READ ARTICLE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 4. Press: Aaj Ka Bulletin Wireless Telemetry Demo -->
+        <div class="achievement-item-card" data-category="press" data-img="assets/achievements/IMG_20261026_202023.jpg" data-title="Aaj Ka Bulletin: ATL Robotics & Wireless Telemetry Coverage" data-desc="Aaj Ka Bulletin feature covering the BBSSM Atal Tinkering Lab 10-day camp. Raman demonstrated RF wireless communication, servo gearing mechanics, and mentored junior students to test and operate the robotic arm directly.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202023.jpg" alt="Aaj Ka Bulletin Newspaper Article — ATL Live Robotics Demo" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-press">AAJ KA BULLETIN REPORT</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">AAJ KA BULLETIN PRINT MEDIA</div>
+            <h4 class="achievement-card-title">Aaj Ka Bulletin: ATL Wireless Robotics Demo</h4>
+            <p class="achievement-card-desc">Detailed report on Raman's live demonstration of RF wireless communication, motor servo gears, and fostering robotics curiosity among junior students.</p>
+            <div class="achievement-card-foot"><span>CLICK TO READ ARTICLE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 5. Trophy: Meerut Division 1st Position Trophy -->
+        <div class="achievement-item-card" data-category="trophy" data-img="assets/achievements/IMG_20261020_011436.jpg" data-title="1st Position Trophy: Meerut Division Science Fair (22 August 2026)" data-desc="Official inscription: 'मेरठ विभाग विज्ञान मेला 22 अगस्त 2026 — किशोर वर्ग विज्ञान प्रदर्श प्रतियोगिता — प्रथम स्थान, आयोजक: सनातन धर्म सरस्वती शिशु मन्दिर इण्टर कॉलेज, सरधना रोड, कंकरखेड़ा, मेरठ'. Handcrafted wooden shield with golden crest.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261020_011436.jpg" alt="Meerut Division Science Fair 1st Position Trophy Wooden Shield" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-trophy">DIVISION 1ST POSITION (प्रथम स्थान)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">MEERUT DIVISION SCIENCE FAIR</div>
+            <h4 class="achievement-card-title">1st Position Trophy: Meerut Division</h4>
+            <p class="achievement-card-desc">Handcrafted wooden shield with gold engraved laurel crest awarded for securing 1st Position in Kishore Varg Vigyan Pradarsh across Meerut Division.</p>
+            <div class="achievement-card-foot"><span>CLICK TO VIEW TROPHY</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 6. Trophy: Prantiya State Science Fair 1st Position Shield -->
+        <div class="achievement-item-card" data-category="trophy" data-img="assets/achievements/IMG_20261020_011444.jpg" data-title="1st Position Championship Shield: Prantiya State Science Fair 2026" data-desc="Official inscription: 'प्रान्तीय ज्ञान विज्ञान मेला 2026 — विज्ञान प्रदर्श (किशोर वर्ग) प्रथम स्थान, प्रहलाद स्वरूप सरस्वती विद्या मन्दिर, जहाँगीराबाद, बुलन्दशहर'. Black & gold shield with Goddess Saraswati & Peacock motif.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261020_011444.jpg" alt="Prantiya State Science Fair 1st Position Championship Shield" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-trophy">STATE 1ST POSITION (प्रथम स्थान)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">PRANTIYA STATE SCIENCE SUMMIT</div>
+            <h4 class="achievement-card-title">1st Position Shield: Prantiya State Science Fair</h4>
+            <p class="achievement-card-desc">Ceremonial black and gold shield engraved with Saraswati and Peacock crest, awarded for securing 1st Position at the state level in Bulandshahr.</p>
+            <div class="achievement-card-foot"><span>CLICK TO VIEW TROPHY</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 7. Trophy: Kshetriya Regional Science Fair 2nd Position Trophy -->
+        <div class="achievement-item-card" data-category="trophy" data-img="assets/achievements/IMG_20261020_011451.jpg" data-title="2nd Position Trophy: Kshetriya Regional Science Fair (Rudrapur, Uttarakhand)" data-desc="Official inscription: 'क्षेत्रीय विज्ञान मेला 2026-27, पश्चिमी उत्तर प्रदेश क्षेत्र, 9-11 अक्टूबर 2026 — किशोर वर्ग विज्ञान प्रदर्श द्वितीय स्थान, सरस्वती विद्या मन्दिर इण्टर कॉलेज, रूद्रपुर (उत्तराखण्ड)'. Stand trophy with gold emblem.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261020_011451.jpg" alt="Kshetriya Regional Science Fair 2nd Position Trophy Stand" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-trophy">REGIONAL 2ND POSITION (द्वितीय स्थान)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">KSHETRIYA REGIONAL SCIENCE FAIR</div>
+            <h4 class="achievement-card-title">2nd Position Trophy: Kshetriya Regional Fair</h4>
+            <p class="achievement-card-desc">Regional stand trophy awarded for securing 2nd Position in Western UP and Uttarakhand regional championship at SVM Inter College, Rudrapur.</p>
+            <div class="achievement-card-foot"><span>CLICK TO VIEW TROPHY</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 8. Certificate: Prantiya State Science Fair 1st Position -->
+        <div class="achievement-item-card" data-category="certificate" data-img="assets/achievements/IMG_20261026_202409.jpg" data-title="Prantiya State Science Fair 1st Position Gold Certificate (Bulandshahr)" data-desc="Official certificate from Bharatiya Shiksha Samiti, Paschim Prant (UP), certifying Raman Luthra secured 1st Position (प्रथम स्थान) in Tarun/Kishore Varg Innovation Model Exhibition held at Jahangirabad, Bulandshahr (8-9 Sept 2026).">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202409.jpg" alt="Prantiya State Science Fair 1st Position Certificate" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-certificate">STATE 1ST POSITION (प्रथम स्थान)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">BHARATIYA SHIKSHA SAMITI PASCHIM PRANT</div>
+            <h4 class="achievement-card-title">State Science Fair — 1st Position Certificate</h4>
+            <p class="achievement-card-desc">Official state championship certificate certifying First Position (प्रथम स्थान) in the innovation model category across Paschim Prant (UP).</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT CERTIFICATE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 9. Certificate: Kshetriya Regional Science Fair 2nd Position -->
+        <div class="achievement-item-card" data-category="certificate" data-img="assets/achievements/IMG_20261026_202237.jpg" data-title="Kshetriya Regional Science Fair 2nd Position Certificate (Rudrapur, Uttarakhand)" data-desc="Official certificate from Vidya Bharati Akhil Bharatiya Shiksha Sansthan, Paschim UP Kshetra, certifying Raman Luthra (Class 10, BBSSM Meerut) secured 2nd Position in Kishore Varg Vigyan Pradarsh held at SVM Inter College, Rudrapur, Uttarakhand (9-11 Oct 2026).">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202237.jpg" alt="Kshetriya Regional Science Fair 2nd Position Certificate Rudrapur" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-certificate">REGIONAL 2ND POSITION (द्वितीय स्थान)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">VIDYA BHARATI KSHETRIYA SCIENCE FAIR</div>
+            <h4 class="achievement-card-title">Regional Fair — 2nd Position Certificate</h4>
+            <p class="achievement-card-desc">Official regional certificate certifying Second Position (द्वितीय स्थान) across Western Uttar Pradesh &amp; Uttarakhand zone at Rudrapur.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT CERTIFICATE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 10. Certificate: ACIC MIET Meerut Foundation (AIM, NITI Aayog) Excellence -->
+        <div class="achievement-item-card" data-category="certificate" data-img="assets/achievements/IMG_20261026_202359.jpg" data-title="ACIC MIET Meerut Foundation / Atal Innovation Mission (NITI Aayog) — 1st Position" data-desc="Certificate of Excellence awarded by ACIC MIET Meerut Foundation (Supported by AIM, NITI Aayog, Govt. of India) to Team Raman Luthra for securing 1st Position (I position) at Atal Tinkering Lab, Baleram Brijbhushan Saraswati Shishu Mandir.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202359.jpg" alt="ACIC MIET Meerut Foundation Certificate of Excellence 1st Position" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-certificate">NITI AAYOG / ACIC 1ST POSITION</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">ATAL COMMUNITY INNOVATION CENTRE</div>
+            <h4 class="achievement-card-title">ACIC MIET (NITI Aayog) — Certificate of Excellence</h4>
+            <p class="achievement-card-desc">Official Certificate of Excellence from ACIC MIET Meerut Foundation supported by AIM, NITI Aayog, honoring 1st Position in innovation competition.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT CERTIFICATE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 11. Certificate: Bureau of Indian Standards (BIS) -->
+        <div class="achievement-item-card" data-category="certificate" data-img="assets/achievements/IMG_20261026_202247.jpg" data-title="Bureau of Indian Standards (BIS) Certificate of Achievement / Participation" data-desc="Issued by Bureau of Indian Standards (BIS) Ghaziabad Branch Office to Master Raman Luthra for Orientation & Standard Writing Competition on 'Learning Science Via Standards' held on 08-10-2026 at BBSSM Meerut. Signed by BIS mentors and leadership.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202247.jpg" alt="Bureau of Indian Standards Certificate of Achievement" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-certificate">BUREAU OF INDIAN STANDARDS (GOVT)</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">GOVERNMENT OF INDIA (BIS GHAZIABAD BRANCH)</div>
+            <h4 class="achievement-card-title">Bureau of Indian Standards (BIS) — Certificate</h4>
+            <p class="achievement-card-desc">Official government certificate awarded to Master Raman Luthra for Learning Science Via Standards competition, authenticated and rotated right-side up.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT CERTIFICATE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 12. Certificate: ACIC MIET Meerut Foundation (AIM, NITI Aayog) Participation -->
+        <div class="achievement-item-card" data-category="certificate" data-img="assets/achievements/IMG_20261026_202429.jpg" data-title="ACIC MIET Meerut Foundation / NITI Aayog — Workshop Participation Certificate" data-desc="Certificate of Participation awarded by ACIC MIET Meerut Foundation (Supported by Atal Innovation Mission, NITI Aayog, Govt. of India) to Raman Luthra for successfully completing hands-on robotics and innovation training at Atal Tinkering Lab BBSSM.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_202429.jpg" alt="ACIC MIET Meerut Foundation Certificate of Participation" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-certificate">ACIC MIET / AIM NITI AAYOG</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">ATAL INNOVATION MISSION WORKSHOP</div>
+            <h4 class="achievement-card-title">ACIC MIET (NITI Aayog) — Workshop Certificate</h4>
+            <p class="achievement-card-desc">Certificate of Participation from ACIC MIET Meerut Foundation (Supported by AIM, NITI Aayog) for completing intensive hands-on embedded systems training.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT CERTIFICATE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 13. Field: EcoGuardian Triple Crown Journey Infographic -->
+        <div class="achievement-item-card" data-category="field" data-img="assets/achievements/IMG_20261026_201905.jpg" data-title="EcoGuardian Triple Crown Journey: District 1st, State 1st, Regional 2nd" data-desc="Milestone photo compilation chronicling the complete competitive journey of the EcoGuardian Ecosystem: District 1st (Meerut Division), State 1st (Bulandshahr), and Regional 2nd (Rudrapur, Uttarakhand), showcasing corresponding championship trophies and hardware setups.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_201905.jpg" alt="EcoGuardian Ecosystem Triple Crown Journey Infographic" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-field">TRIPLE CROWN INFOGRAPHIC</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">ECOGUARDIAN TIMELINE MILESTONE</div>
+            <h4 class="achievement-card-title">EcoGuardian Triple Crown: District to Regional</h4>
+            <p class="achievement-card-desc">Milestone infographic chronicling the journey: District 1st, State 1st, and Regional 2nd victories with trophies and live hardware demonstration setups.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT INFOGRAPHIC</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 14. Field: State Championship Journey Collage -->
+        <div class="achievement-item-card" data-category="field" data-img="assets/achievements/IMG_20261026_201930.jpg" data-title="State Science Fair Victory Collage: 'State Cleared' (Jahangirabad)" data-desc="6-panel documentary collage from the State Science Fair: dual-laptop live control station with VR headset, stage award presentation, EcoGuardian sorting mechanism, illuminated rover chassis, and Raman holding both 1st place championship shields side-by-side.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_201930.jpg" alt="State Science Fair Championship Collage Jahangirabad Bulandshahr" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-field">STATE CHAMPIONSHIP COLLAGE</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">PRANTIYA VIGYAN MELA EXPEDITION</div>
+            <h4 class="achievement-card-title">State Championship Collage: Telemetry &amp; Rover</h4>
+            <p class="achievement-card-desc">6-panel collage featuring live telemetry workstation with VR headset, stage felicitation, autonomous rover chassis, and dual championship trophies.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT COLLAGE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 15. Field: Meerut Division Victory & Robotics Lab Collage -->
+        <div class="achievement-item-card" data-category="field" data-img="assets/achievements/IMG_20261026_201948.jpg" data-title="Meerut Division Science Fair Victory & Robotics Lab Collage" data-desc="6-panel photographic record of the Meerut Division Science Fair at Sanatan Dharm SVM: close-up of 1st Position wooden trophy, stage award ceremony, Raman at his robotics lab workstation with autonomous rover, RC transmitter, and IoT Smart Harvest machine.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20261026_201948.jpg" alt="Meerut Division Science Fair Victory and Lab Showcase Collage" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-field">MEERUT DIVISION COLLAGE</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">SANATAN DHARM SVM INTER COLLEGE</div>
+            <h4 class="achievement-card-title">Meerut Division Victory &amp; Lab Workstation</h4>
+            <p class="achievement-card-desc">6-panel documentation highlighting the 1st Position wooden plaque, stage prize distribution, robotics workbench, and telemetry remote controls.</p>
+            <div class="achievement-card-foot"><span>CLICK TO INSPECT COLLAGE</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+        <!-- 16. Field: State Science Fair Stage Felicitation Ceremony -->
+        <div class="achievement-item-card" data-category="field" data-img="assets/achievements/IMG_20260909_133931.jpg" data-title="State Science Fair Stage Felicitation Ceremony (Jahangirabad)" data-desc="Raman Luthra and teammates receiving their 1st Position state championship trophies, gold medals, and certificates on stage at Prahlad Swaroop Saraswati Vidya Mandir, Jahangirabad (Bulandshahr) from dignitaries and Vidya Bharati leaders.">
+          <div class="achievement-thumb-wrap">
+            <img src="assets/achievements/IMG_20260909_133931.jpg" alt="State Science Fair Main Stage Award Felicitation Ceremony" class="achievement-thumb" loading="lazy">
+            <span class="achievement-type-badge badge-field">STAGE AWARD CEREMONY</span>
+          </div>
+          <div class="achievement-info-block">
+            <div class="achievement-date">VALEDICTORY AWARD PODIUM</div>
+            <h4 class="achievement-card-title">State Science Fair Grand Felicitation</h4>
+            <p class="achievement-card-desc">Live photograph on the main convention stage receiving the 1st Position state trophies and certificates from distinguished education council leaders.</p>
+            <div class="achievement-card-foot"><span>CLICK TO VIEW FULL PHOTO</span> <span>🔍</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HARDWARE PROTOTYPING VAULT & BENCH LAB (VIDEO + PHOTOS)
+         ========================================================================== -->
+    <section id="hardware-lab">
+      <div class="section-header">
+        <span class="section-tag">R&amp;D LAB BENCH EVIDENCE</span>
+        <h2 class="section-title">Hardware Prototyping &amp; Bench Testing</h2>
+        <p class="section-subtitle">Real engineering happens on the bench. Inspect live telemetry, high-discharge motor driver integration, and all-terrain tracked rover tests.</p>
+      </div>
+
+      <div class="dev-vault-layout">
+        <!-- Live Video Terminal Player -->
+        <div class="video-player-terminal">
+          <div class="video-player-top">
+            <span>RYVEX LAB // CAM-01: LIVE FIELD TRACTION TEST</span>
+            <span style="color: var(--emerald);">1080P HD // 60 FPS</span>
+          </div>
+
+          <div class="video-frame-container">
+            <video class="dev-video-element" id="dev-video" poster="assets/projects/video_poster.jpg" controls preload="metadata">
+              <source src="assets/projects/dev_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+
+            <div class="video-hud-overlay">
+              <div class="rec-pulse-dot"></div>
+              <span>REC // 00:07.9 FIELD TEST RUN</span>
+            </div>
+          </div>
+
+          <div style="padding: 1rem 1.25rem; background: rgba(5, 12, 28, 0.95); border-top: 1px solid var(--border-cyan);">
+            <div style="font-family: var(--font-hud); font-size: 1.05rem; font-weight: 700; color: #ffffff; margin-bottom: 0.25rem;">
+              All-Terrain Tracked Rover Traction &amp; Dual BTS7960 Motor Stress Test
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--silver-dim);">
+              Testing dual 43A H-bridge drivers under peak load with 3S 11.1V LiPo battery pack. High-torque steel-gear motors running continuous stall-prevention loop.
+            </div>
+          </div>
+        </div>
+
+        <!-- Prototyping Photo Gallery Strip -->
+        <div>
+          <div style="font-family: var(--font-hud); font-size: 1.25rem; font-weight: 700; color: var(--cyan); margin-bottom: 1rem; text-transform: uppercase;">
+            Bench Fabrication &amp; Wiring Harness Archive
+          </div>
+          <div class="dev-gallery-strip">
+            <div class="dev-photo-tile" data-img="assets/development/dev_chassis_frame.jpg" data-title="Chassis Frame Fabrication" data-desc="Heavy-duty reinforced chassis structure designed to house the 5-DOF arm, dual-microcontroller box, and power converter.">
+              <img src="assets/development/dev_chassis_frame.jpg" alt="Chassis Frame" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_wiring_integration.jpg" data-title="Dual BTS7960 Wiring Harness" data-desc="High-current wiring harness connecting 43A motor drivers, LiPo battery bus, and ESP32 Master controller.">
+              <img src="assets/development/dev_wiring_integration.jpg" alt="Wiring Integration" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_early_prototype.jpg" data-title="Early Breadboard Logic Validation" data-desc="Initial testing of logic levels, pull-up resistors, and wireless transceiver serial packets.">
+              <img src="assets/development/dev_early_prototype.jpg" alt="Early Prototype" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_sensor_harness.jpg" data-title="Sensor Integration Harness" data-desc="Mounting ultrasonic depth sensors, MQ-135 gas sensors, and I2C status LCD module.">
+              <img src="assets/development/dev_sensor_harness.jpg" alt="Sensor Harness" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_chassis_bench_1.png" data-title="Mechanical Alignment Test" data-desc="Verifying track tension, center-of-gravity balance, and ground clearance on the test bench.">
+              <img src="assets/development/dev_chassis_bench_1.png" alt="Chassis Bench 1" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_chassis_bench_2.png" data-title="Motor Torque Stress Test" data-desc="Testing current consumption under simulated 10kg resistance on laboratory bench power supply.">
+              <img src="assets/development/dev_chassis_bench_2.png" alt="Chassis Bench 2" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_sorting_mechanism.png" data-title="EcoGuardian Chute Alignment" data-desc="Aligning the rotary stepper table with the four collection hoppers for smooth waste diversion.">
+              <img src="assets/development/dev_sorting_mechanism.png" alt="Sorting Mechanism" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_robot_rig.png" data-title="Full Robotic Rig Integration" data-desc="Final assembly of arm mechanics, wireless transceivers, and camera tilt bracket.">
+              <img src="assets/development/dev_robot_rig.png" alt="Robot Rig" loading="lazy">
+            </div>
+            <div class="dev-photo-tile" data-img="assets/development/dev_final_bench_test.png" data-title="Pre-Techathon Readiness Check" data-desc="Final system burn-in test before departing for IIT Roorkee National Techathon 3.0.">
+              <img src="assets/development/dev_final_bench_test.png" alt="Final Bench Test" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOUNDER'S NOTE & VISION
+         ========================================================================== -->
+    <section class="founder-section" id="founder-vision">
+      <div class="section-header">
+        <span class="section-tag">THE MANIFESTO</span>
+        <h2 class="section-title">Message from the Founder</h2>
+        <p class="section-subtitle">Why a 16-year-old student is building defense and environmental robotics from Meerut to the world.</p>
+      </div>
+
+      <div class="founder-card">
+        <div class="founder-poster-frame">
+          <img src="assets/brand/poster.png" alt="Raman Luthra — Founder of RYVEX Technologies" class="founder-poster-img">
+        </div>
+
+        <div>
+          <div class="founder-quote-box">
+            <div class="quote-highlight">
+              "True engineering is not born in multimillion-dollar corporate test labs—it is forged late at night on cluttered workbenches, fueled by soldering smoke, burned-out resistors, and a stubborn refusal to accept limits."
+            </div>
+          </div>
+
+          <p class="founder-body-text">
+            My journey began not with grants or fancy facilities, but with taking apart broken toys and salvaged circuit boards on my desk in Meerut. At an age when most are content with classroom textbooks, I felt an urgent calling: why should our armed forces and environmental rangers rely on foreign technology when we have the intellect and grit to engineer superior solutions right here?
+          </p>
+
+          <p class="founder-body-text">
+            Every millimeter of RYVEX hardware—whether it is the Trommel Sieve on the ARCR-UGV collecting unexploded ammunition, or the dual-ESP32 mothership architecture on VIGIL-X4 chosen for the IIT Roorkee Techathon 3.0 Finals—has been designed, coded, soldered, and debugged with one core conviction: <strong>India will lead the next century of autonomous defense and ecological robotics.</strong>
+          </p>
+
+          <p class="founder-body-text">
+            RYVEX Technologies is my pledge to that vision. We do not build toys; we build mission-ready systems.
+          </p>
+
+          <div class="founder-sign-off">
+            <span class="founder-name">Raman Luthra</span>
+            <span class="founder-role">Founder &amp; Chief Robotics Architect | RYVEX Technologies</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan); margin-top: 4px;">Meerut, Uttar Pradesh, India // Class of 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OFFICIAL DOSSIER DOWNLOADS
+         ========================================================================== -->
+    <section id="dossiers">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERING DOCUMENTATION</span>
+        <h2 class="section-title">Official Technical Dossiers</h2>
+        <p class="section-subtitle">Download comprehensive engineering whitepapers, schematics summaries, and founder briefs.</p>
+      </div>
+
+      <div class="dossier-grid">
+        <a href="assets/docs/ARCR_UGV_Summary.pdf" target="_blank" class="dossier-card">
+          <div class="dossier-icon">📄</div>
+          <div class="dossier-title">ARCR-UGV Autonomous Rover</div>
+          <p style="font-size: 0.8rem; color: var(--silver-dim); line-height: 1.4;">
+            Complete 300-word executive summary, mechanical drum calculations, and UXO edge AI detection flow.
+          </p>
+          <div class="dossier-meta">
+            <span>ARCR_UGV_Summary.pdf</span>
+            <span style="color: var(--cyan);">70 KB ⬇</span>
+          </div>
+        </a>
+
+        <a href="assets/docs/VIGIL_X4_Project_Overview.pdf" target="_blank" class="dossier-card">
+          <div class="dossier-icon">🛸</div>
+          <div class="dossier-title">VIGIL-X4 Tactical Mothership</div>
+          <p style="font-size: 0.8rem; color: var(--silver-dim); line-height: 1.4;">
+            Dual ESP32 master-slave architecture, ESP-NOW protocol frame, 5-DOF arm kinematics, and LoRa specs.
+          </p>
+          <div class="dossier-meta">
+            <span>VIGIL_X4_Overview.pdf</span>
+            <span style="color: var(--cyan);">30 KB ⬇</span>
+          </div>
+        </a>
+
+        <a href="assets/docs/EcoGuardian_Ecosystem_Summary.pdf" target="_blank" class="dossier-card">
+          <div class="dossier-icon">♻️</div>
+          <div class="dossier-title">EcoGuardian Ecosystem</div>
+          <p style="font-size: 0.8rem; color: var(--silver-dim); line-height: 1.4;">
+            4-tier sensor fusion matrix, stepper rotary tray geometry, and "Thursday" AI telemetry protocol.
+          </p>
+          <div class="dossier-meta">
+            <span>EcoGuardian_Summary.pdf</span>
+            <span style="color: var(--cyan);">28 KB ⬇</span>
+          </div>
+        </a>
+
+        <a href="assets/docs/RYVEX_Technologies_Website_Summary.pdf" target="_blank" class="dossier-card">
+          <div class="dossier-icon">🌐</div>
+          <div class="dossier-title">RYVEX Corporate Brief</div>
+          <p style="font-size: 0.8rem; color: var(--silver-dim); line-height: 1.4;">
+            Comprehensive company overview, mission statements, technology stacks, and roadmap.
+          </p>
+          <div class="dossier-meta">
+            <span>RYVEX_Summary.pdf</span>
+            <span style="color: var(--cyan);">29 KB ⬇</span>
+          </div>
+        </a>
+
+        <a href="assets/docs/Raman_Luthra_Founder_Message.pdf" target="_blank" class="dossier-card">
+          <div class="dossier-icon">⚡</div>
+          <div class="dossier-title">Founder's Official Manifesto</div>
+          <p style="font-size: 0.8rem; color: var(--silver-dim); line-height: 1.4;">
+            Personal statement from Raman Luthra on the future of defense innovation in India.
+          </p>
+          <div class="dossier-meta">
+            <span>Founder_Message.pdf</span>
+            <span style="color: var(--cyan);">29 KB ⬇</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COLLABORATION / CONTACT TERMINAL
+         ========================================================================== -->
+    <section id="contact-terminal">
+      <div class="section-header">
+        <span class="section-tag">SECURE TRANSMISSION CHANNEL</span>
+        <h2 class="section-title">Initiate Collaboration</h2>
+        <p class="section-subtitle">Reach out for defense research partnerships, venture incubation, university collaborations, or press inquiries.</p>
+      </div>
+
+      <div class="contact-terminal-card">
+        <div class="console-header-bar">
+          <div class="console-title-wrap">
+            <span class="console-icon">✉</span>
+            <span class="console-title">COMMUNICATIONS CHANNEL // ENCRYPTED LINK</span>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--cyan);">
+            DESTINATION: RAMAN LUTHRA [FOUNDER]
+          </div>
+        </div>
+
+        <form class="terminal-form-body" id="contact-form">
+          <div class="form-row-dual">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name / Callsign *</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Vikram Sarabhai / Major Singh" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Secure Email Address *</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. contact@defense-lab.in" required>
+            </div>
+          </div>
+
+          <div class="form-row-dual">
+            <div class="form-group">
+              <label for="contact-org" class="form-label">Organization / Institution</label>
+              <input type="text" id="contact-org" class="form-input" placeholder="e.g. DRDO / IIT / Media House / Incubation Cell">
+            </div>
+            <div class="form-group">
+              <label for="contact-channel" class="form-label">Channel Objective</label>
+              <select id="contact-channel" class="form-select">
+                <option value="defense">Defense &amp; Military Research Collaboration</option>
+                <option value="incubation">Startup Grant / Angel Incubation</option>
+                <option value="academic">University / Techathon Partnership</option>
+                <option value="press">Press &amp; Media Interview</option>
+                <option value="other">General Robotics Inquiry</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message Payload *</label>
+            <textarea id="contact-message" class="form-textarea" placeholder="Detail your technical requirement, collaboration proposal, or message for Raman Luthra..." required></textarea>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--emerald);">
+              🔒 256-BIT ENCRYPTION SIMULATOR ACTIVE
+            </div>
+            <button type="submit" class="btn-hud-primary" id="btn-submit-transmission">
+              <span>TRANSMIT MESSAGE TO RYVEX</span>
+              <span>⚡</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="hud-footer">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 1.5rem;">
+      <div class="footer-top-grid">
+        <div>
+          <div class="brand-crest" style="margin-bottom: 1rem;">
+            <img src="assets/brand/logo.png" alt="RYVEX Logo" class="brand-crest-logo">
+            <div class="brand-text">
+              <span class="brand-name">RYVE<span class="accent-x">X</span></span>
+              <span class="brand-tagline">Build Beyond Limits</span>
+            </div>
+          </div>
+          <p class="footer-brand-bio">
+            Pioneering indigenous autonomous robotics, multi-domain command motherships, and environmental intelligence systems. Founded by Raman Luthra, 16-year-old defense innovator from Meerut, India.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--cyan); margin-bottom: 1rem; letter-spacing: 1px;">SYSTEMS</h4>
+          <ul style="list-style: none; font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="#project-arcr" style="color: var(--silver-dim); text-decoration: none;">ARCR-UGV Brass Rover</a></li>
+            <li><a href="#project-vigil" style="color: var(--silver-dim); text-decoration: none;">VIGIL-X4 Command Carrier</a></li>
+            <li><a href="#project-ecoguardian" style="color: var(--silver-dim); text-decoration: none;">EcoGuardian Sorter</a></li>
+            <li><a href="#mission-control" style="color: var(--silver-dim); text-decoration: none;">"Thursday" AI Core</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--cyan); margin-bottom: 1rem; letter-spacing: 1px;">PROOF &amp; HONORS</h4>
+          <ul style="list-style: none; font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li><a href="#achievement-vault" style="color: var(--silver-dim); text-decoration: none;">IIT Roorkee Techathon 3.0</a></li>
+            <li><a href="#achievement-vault" style="color: var(--silver-dim); text-decoration: none;">State Science Fair 1st Prize</a></li>
+            <li><a href="#achievement-vault" style="color: var(--silver-dim); text-decoration: none;">NITI Aayog / ACIC Award</a></li>
+            <li><a href="#achievement-vault" style="color: var(--silver-dim); text-decoration: none;">BIS Certificate of Honor</a></li>
+            <li><a href="#hardware-lab" style="color: var(--silver-dim); text-decoration: none;">Live Field Test Video</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-display); font-size: 0.95rem; color: var(--cyan); margin-bottom: 1rem; letter-spacing: 1px;">STATUS &amp; LOCATION</h4>
+          <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--silver-medium); display: flex; flex-direction: column; gap: 0.4rem;">
+            <div>LOCATION: Meerut, UP, India</div>
+            <div>STATUS: <span style="color: var(--emerald);">NOMINAL (100% OPERATIONAL)</span></div>
+            <div>TELEMETRY: ESP-NOW + 433MHz LoRa</div>
+            <div>UPTIME: 99.98% CYBERNETIC</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border-dim); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+        <div>
+          © 2026 RYVEX TECHNOLOGIES. All rights reserved. Engineering and intellectual property by Raman Luthra.
+        </div>
+        <div>
+          MADE WITH SWADESHI PRIDE &amp; NEXT-GEN AEROSPACE CODE
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LIGHTBOX MODAL FOR GENUINE EVIDENCE
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close dialog">✕</button>
+      <div class="lightbox-img-stage">
+        <img src="" alt="" class="lightbox-active-img" id="lightbox-img">
+      </div>
+      <div class="lightbox-info-pane">
+        <h3 class="lightbox-title" id="lightbox-title">Document Title</h3>
+        <p class="lightbox-desc" id="lightbox-desc">Detailed verification notes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="hud-toast" id="hud-toast">Transmission Dispatched.</div>
+
+  <!-- Core Javascript Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

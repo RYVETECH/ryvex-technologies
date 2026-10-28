@@ -1,0 +1,10 @@
+achivements/
+brand/
+by the founder/
+project development/
+projects/
+extracted_text/
+extract_all.py
+*.log
+.vscode/
+.vercel/
